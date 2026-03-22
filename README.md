@@ -6,6 +6,7 @@ This repository implements a configuration-driven pipeline for large-scale CLIP 
 ## Modular
   - Separates datasets, models, and experiment configurations into dedicated YAML registries.
   - Organizes the workflow into distinct scripts for design-matrix generation, attention and embedding extraction, and session execution.
+  - In analysis and visualization, flexibility is achieved by claiming variable names and target analysis modules upfront.
   
 ## Scalable
   - 300,000 runs for each experiment, 9 (models) x 2 (datasets) experiments in total.
@@ -25,4 +26,5 @@ reference: [Exploring Explainability for Vision Transformers](https://jacobgil.g
 
 
 # Note
-`dataset/` is not included in this repository due to copyright restrictions.
+- `dataset/` is not included in this repository due to copyright restrictions.
+- Only partial experiments were included for now.
