@@ -8,6 +8,7 @@ This repository implements a configuration-driven pipeline for large-scale CLIP 
   - Organizes the workflow into distinct scripts for design-matrix generation, attention and embedding extraction, and session execution.
   
 ## Scalable
+  - 300,000 runs for each experiment, 9 (models) x 2 (datasets) experiments in total.
   - Improves efficiency through batch operations and matrix-based computation.
   - Precomputes and stores reusable embeddings, then retrieves subsets as needed to balance speed and computational resources.
 
