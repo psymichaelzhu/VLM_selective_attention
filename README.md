@@ -9,7 +9,7 @@ This repository implements a configuration-driven pipeline for large-scale CLIP 
   - In analysis and visualization, flexibility is achieved by claiming variable names and target analysis modules upfront.
   
 ## Scalable
-  - 300,000 runs for each experiment, 9 (models) x 2 (datasets) experiments in total.
+  - 300,000 runs for each experiment, 9 (models) x 2 (datasets) experiments in total. Each run includes calculations of multiple similarity and attention metrics.
   - Improves efficiency through batch operations and matrix-based computation.
   - Precomputes and stores reusable embeddings, then retrieves subsets as needed to balance speed and computational resources.
 
