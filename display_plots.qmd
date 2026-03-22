@@ -1,0 +1,50 @@
+---
+title: "Trial Coefficient Emotion Plots"
+format: html
+---
+
+```{python}
+from pathlib import Path
+from IPython.display import display, Image
+
+results_dir = Path("results")
+
+for folder in sorted(results_dir.iterdir()):
+    plot = folder / "plot_item_coef.png"
+    if plot.exists():
+        print(f"### {folder.name}")
+        display(Image(filename=str(plot)))
+```
+
+
+```{python}
+from pathlib import Path
+from IPython.display import display, Image
+
+results_dir = Path("experiment")
+
+for folder in sorted(results_dir.iterdir()):
+    if folder.name.startswith("Doasisfull"):
+        continue
+    plot = folder / "validate_attention_s0.png"
+    if plot.exists():
+        print(f"### {folder.name}")
+        display(Image(filename=str(plot)))
+```
+
+
+
+
+```{python}
+from pathlib import Path
+from IPython.display import display, Image
+
+results_dir = Path("results")
+
+for folder in sorted(results_dir.iterdir()):
+    plot = folder / "cor_item_level.png"
+    if plot.exists():
+        print(f"### {folder.name}")
+        display(Image(filename=str(plot)))
+```
+
