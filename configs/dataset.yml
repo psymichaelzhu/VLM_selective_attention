@@ -1,0 +1,11 @@
+# Dataset registry.
+# Keys are dataset_id values used throughout the pipeline.
+# subset: key in data/{dataset_name}/subset.yml; null means use all items.
+
+Doasisfull:
+  name: OASIS
+  subset: null
+
+Demomadridfull:
+  name: EmoMadrid
+  subset: null

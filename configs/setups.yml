@@ -1,0 +1,165 @@
+# Reusable setup definitions.
+# Referenced from experiments.yml via setup_id.
+# Layer values use relative depth: 0.0 = first block, 1.0 = last block, 0.5 = middle.
+# Set different batch sizes for different models.
+
+Smin_forl: # minimal metric extraction, for large models (small batch size)
+  run:
+    seed: 42
+    session_size: 300000
+    batch_size: 128 
+    n_trials: null
+
+  layout: # using default sizes
+    item_patchN: 5
+    padding_patchN: 1
+
+  metrics:
+    - metric: cosine_similarity
+      variant: semi
+
+    - metric: attention_map
+      variant: 100_mean_cls
+      layer: 1.0
+      head_reduction: mean
+      query_token_index: 0
+      summary:
+        - mean
+
+    - metric: attention_rollout
+      variant: 070_max_cls
+      head_reduction: max
+      discard_ratio: 0.70
+      query_token_index: 0
+      summary:
+        - mean
+
+
+Smin_forb: # minimal metric extraction, for small models (large batch size)
+  run:
+    seed: 42
+    session_size: 300000
+    batch_size: 256 
+    n_trials: null
+
+  layout: # using default sizes
+    item_patchN: 5
+    padding_patchN: 1
+
+  metrics:
+    - metric: cosine_similarity
+      variant: semi
+
+    - metric: attention_map
+      variant: 100_mean_cls
+      layer: 1.0
+      head_reduction: mean
+      query_token_index: 0
+      summary:
+        - mean
+
+    - metric: attention_rollout
+      variant: 070_max_cls
+      head_reduction: max
+      discard_ratio: 0.70
+      query_token_index: 0
+      summary:
+        - mean
+
+
+Smin_forh: # minimal metric extraction, for small models (large batch size)
+  run:
+    seed: 42
+    session_size: 300000
+    batch_size: 4 
+    n_trials: null
+
+  layout: # using default sizes
+    item_patchN: 5
+    padding_patchN: 1
+
+  metrics:
+    - metric: cosine_similarity
+      variant: semi
+
+    - metric: attention_map
+      variant: 100_mean_cls
+      layer: 1.0
+      head_reduction: mean
+      query_token_index: 0
+      summary:
+        - mean
+
+    - metric: attention_rollout
+      variant: 070_max_cls
+      head_reduction: max
+      discard_ratio: 0.70
+      query_token_index: 0
+      summary:
+        - mean
+
+
+
+
+Smin_forl_def: # minimal metric extraction, for large models (small batch size)
+  run:
+    seed: 42
+    session_size: 300000
+    batch_size: 64 
+    n_trials: null
+
+  layout: # using default sizes
+    item_patchN: null
+    padding_patchN: null
+
+  metrics:
+    - metric: cosine_similarity
+      variant: semi
+
+    - metric: attention_map
+      variant: 100_mean_cls
+      layer: 1.0
+      head_reduction: mean
+      query_token_index: 0
+      summary:
+        - mean
+
+    - metric: attention_rollout
+      variant: 070_max_cls
+      head_reduction: max
+      discard_ratio: 0.70
+      query_token_index: 0
+      summary:
+        - mean
+
+
+Smin_forb_def: # minimal metric extraction, for small models (large batch size)
+  run:
+    seed: 42
+    session_size: 300000
+    batch_size: 256 
+    n_trials: null
+
+  layout: # using default sizes
+    item_patchN: null
+    padding_patchN: null
+
+  metrics:
+    - metric: cosine_similarity
+      variant: semi
+
+    - metric: attention_map
+      variant: 100_mean_cls
+      layer: 1.0
+      head_reduction: mean
+      query_token_index: 0
+      summary:
+        - mean
+
+    - metric: attention_rollout
+      variant: 070_max_cls
+      head_reduction: max
+      discard_ratio: 0.70
+      query_token_index: 0
+      summary:
+        - mean

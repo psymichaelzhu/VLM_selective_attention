@@ -1,0 +1,117 @@
+Demomadridfull_Ml14datacomp_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Ml14datacomp
+    setup_id: Smin_forl
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb16datacomp_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb16datacomp
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb32datacomp_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb32datacomp
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Ml14laion2b_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Ml14laion2b
+    setup_id: Smin_forl
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb16laion2b_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb16laion2b
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb32laion2b_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb32laion2b
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb32openai_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb32openai
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Ml14openai_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Ml14openai
+    setup_id: Smin_forl
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+Demomadridfull_Mb16openai_Smin_pairwise:
+  experiment:
+    dataset_id: Demomadridfull
+    model_id: Mb16openai
+    setup_id: Smin_forb
+    task: pairwise
+    session_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5

@@ -1,0 +1,23 @@
+# system files
+.DS_Store
+Thumbs.db
+desktop.ini
+._*
+
+# logs
+*.log
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# data
+data/
+
+# results
+results/
+
+
+.Rproj.user

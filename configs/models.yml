@@ -1,0 +1,78 @@
+# Model registry for CLIP-based vision transformers.
+# All models are ViT-based and loaded via open_clip.
+# Keys are model_id values used throughout the pipeline.
+#
+# model_spec supports three forms:
+#   - built-in name:    "ViT-B-32"
+#   - HuggingFace Hub:  "hf-hub:org/repo"
+#   - local directory:  "local-dir:/path/to/model"
+#
+# For hf-hub and local-dir models, set pretrained: null.
+
+# New scaling x pretrained
+
+# laion2b
+Ml14laion2b:
+  model_spec: ViT-L-14
+  pretrained: laion2b_s32b_b82k
+
+Mb16laion2b:
+  model_spec: ViT-B-16
+  pretrained: laion2b_s34b_b88k
+
+Mb32laion2b:
+  model_spec: ViT-B-32
+  pretrained: laion2b_s34b_b79k
+
+Mh14laion2b:
+  model_spec: ViT-H-14
+  pretrained: laion2b_s32b_b79k
+
+# openai
+Mb32openai:
+  model_spec: ViT-B-32
+  pretrained: openai
+
+Ml14openai:
+  model_spec: ViT-L-14
+  pretrained: openai
+
+Mb16openai:
+  model_spec: ViT-B-16
+  pretrained: openai
+
+# datacomp_xl_s13b_b90k
+Mb32datacomp:
+  model_spec: ViT-B-32
+  pretrained: datacomp_xl_s13b_b90k
+
+Ml14datacomp:
+  model_spec: ViT-L-14
+  pretrained: datacomp_xl_s13b_b90k
+
+Mb16datacomp:
+  model_spec: ViT-B-16
+  pretrained: datacomp_xl_s13b_b90k
+
+# laion400m_e32
+Mb32laion:
+  model_spec: ViT-B-32
+  pretrained: laion400m_e32
+
+Ml14laion:
+  model_spec: ViT-L-14
+  pretrained: laion400m_e32
+
+Mb16laion:
+  model_spec: ViT-B-16
+  pretrained: laion400m_e32
+
+# SigLIP
+Ml16siglip:
+  model_spec: ViT-L-16-SigLIP-256
+  pretrained: webli
+
+
+Mb16siglip:
+  model_spec: ViT-B-16-SigLIP-256
+  pretrained: webli
